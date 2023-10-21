@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD505gDZan2Fw-dcmHHIDXAibP7mVJ9QTo&libraries=places&callback=initMap"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container-fluid d-flex justify-content-between ">
+          <div class="w-50 ">
+            <!-- <img src="logo.png" width="50" height="70" class="object-fit-cover "> -->
+            <a class="navbar-brand" href="#">Navbar</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link   " aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US <i class="bi bi-chevron-down"></i></a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link " href="#">GALLERY <i class="bi bi-chevron-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active  " href="#">CONTACT US <i class="bi bi-chevron-down"></i></a>
+              </li>
+                
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="first" id="first">
+        <div class="bg-dark text-light text-center py-2">
+            <h6 >GET IN TOUCH WITH THE ACADEMY</h6>
+        </div>
+      
+        <main class="d-block d-md-flex justify-content-around align-items-center lor ">
+        <div class="text-light col-12  col-md-3 moh">
+            <p class="h2 text-decoration-underline my-2 " >contact info</p>
+         <a class="text-decoration-none btn btn-success " href="https://api.whatsapp.com/send?phone=2348088682387"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+         <a class="text-decoration-none btn btn-primary " href="#"><i class="bi bi-facebook"></i> Facebook</a>
+         <p class="my-4"><i class="bi bi-telephone"></i> 08088682387 </p>
+         <h5>Address :</h5>
+         <p>Inside Obafemi Awolowo Stadium, Main Bowl Manual Scoreboard Building Liberty Rd, New Gra, Ibadan.</p>
+        </div>
+        <div>
+            <div class="form-container">
+                <h5>Contact Via Email</h5>
+                <form action="https://formsubmit.co/hlmayadiram@email.com" method="POST" class="form" >
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="input your name" required>
+                    <label for="email" > Email</label>
+                    <input type="text" placeholder="Enter your Email" id="email" name="email" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="textarea">How Can We Help You?</label>
+                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+                  </div>
+                  <button class="form-submit-btn" type="submit">Submit</button>
+                </form>
+              </div>
+
+        </div>
+        </main>
+        
+      </section>
+      <div class="bjo">
+
+        <p class="fw-bold text-warning jb">WE DREAM HIGH.</p><br>
+
+      </div>
+      <footer>
+        <a class="btn btn-outline-dark  of" href="#first"><i class="bi bi-chevron-double-up"></i></a>
+        <main class="d-flex align-items-center justify-content-center bg-dark text-light ">
+          <div >
+            <img src="logo.png" height="200" srcset="">
+          </div>
+          <div>
+            <h2 class="c1">ADONIS </h2>
+            <h2>FOOTBALL ACADEMY</h2>
+    
+          </div>
+        </main>
+        <main  class="position-relative ">
+
+          <div id="map" style="width: 100%; height: 400px;"></div>
+            <div class="d-flex  position-absolute "style="bottom:20px;">
+              
+              <button class="btn btn-success " id="locate-me">My Location</button>
+              <button  class="btn btn-primary "style="" id="get-directions">Map Down</button>
+            </div>
+        </main>
+        <div class="text-center bg-dark text-light p-2">
+          <p class="fw-bold"> Inside Obafemi Awolowo Stadium, Main Bowl Manual Scoreboard Building Liberty Rd, New Gra, Ibadan.</p>
+          <p class="fw-bold h6">Office +2348088682387</p>
+          <p class="fw-bold h6">adonisfc@gmail.com</p>
+          <span class="">
+          <a class="mx-2 text-decoration-none h2 text-primary "  href="#"><i class="bi bi-facebook"></i></a>
+          <a class="mx-2 text-decoration-none h2 text-success "  href="#"><i class="bi bi-whatsapp"></i></a>
+          <a class="mx-2 text-decoration-none h2"  href="#"><i class="bi bi-twitter-x"></i></a>
+          </span>
+        </div>
+        <div class="bg-light text-dark d-flex justify-content-around   align-items-center px-2 omg">
+          <span>We Build Tommorrow Professionals </span>
+          <span class="kt">|</span>
+          <span class="fw-bold "> Developer Info: 09052504906</span>
+        </div>
+      </footer>
+</body>
+
+
+<script src="contact.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
